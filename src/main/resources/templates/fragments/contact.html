@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment = "contact-section">
+
+    <section class="section contact" id = "contact">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Want to hire me? Or just say hi? Either way, I’m always up for a chat.
+                </p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let’s Connect (or roast JavaScript together)</h3>
+                    <p class="contact-text">
+                        Count on me
+                    </p>
+                    <div class="contact-links">
+
+                        <!--Phone Number-->
+                        <a href="tel:+919336399633" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">Phone</span>
+                                <span class="contact-link-value">+91 9336399633</span>
+                            </div>
+                        </a>
+
+                        <!--Email-->
+                        <a href="mailto:peeyush2003sharma@gmail.com" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">peeyush2003sharma@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!--Linkedin-->
+                        <a href="https://www.linkedin.com/in/ipeeyush/" target = "_blank" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">ipeeyush</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="126c913c-6f76-4fce-9ea9-a76951c69ca0">
+
+                        <div class="form-group">
+                            <label for= "name" class = "form-label">Your Name</label>
+                            <input type="text" class="form-control" name = "name" id = "name" placeholder="Jhon Doe"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for= "email" class = "form-label">Your Email</label>
+                            <input type="email" class="form-control" name = "email" id = "email" placeholder="jhon@example.com"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for= "message" class = "form-label">Your Message</label>
+                            <textarea class="form-control" name = "message" id = "message" placeholder="Type your message here..."> </textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type = "submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>

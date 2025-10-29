@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="projects-section">
+    <section class="section projects" id = "projects">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">
+                    Explore some of my Projects
+                </p>
+            </div>
+            <div class="projects-container">
+                <!--Project 1: ReplyWise-->
+                <div class="project-card">
+                <div class="project-image">
+                    <img src = "/images/replywise.png" alt = "project">
+                    <div class="project-overlay"></div>
+                    <div class="project-tags">
+                        <span class="project-tag">Spring Boot</span>
+                        <span class="project-tag">Spring Security</span>
+                        <span class="project-tag">Data JPA</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">Postman</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">ReplyWise: AI Email assistant</h3>
+                    <p class="project-description">
+                        A smart response automation tool designed to generate context-aware, professional, and efficient replies, helping users save time and maintain consistency in communication.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/i-peeyush/ReplyWise.git" class = "project-link" target= "_Blank">
+                            <i class = "fab fa-github"></i> View Code
+                        </a>
+                        <a href="" class = "project-link" target= "_Blank">
+                            Live Preview <i class = "fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+                <!--Project 2: ChatApp-->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src = "/images/replywise1.png" alt = "project">
+                        <div class="project-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">Spring Security</span>
+                            <span class="project-tag">Data JPA</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Postman</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ping Sphere: Real Time Chat App</h3>
+                        <p class="project-description">
+                            A real-time, scalable messaging platform built with Java, Spring Boot, WebSocket, and React.js. It delivers low-latency communication, persistent chat rooms, and high concurrency support
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/i-peeyush/PingSphere.git" class = "project-link" target= "_Blank">
+                                <i class = "fab fa-github"></i> View Code
+                            </a>
+                            <a href="" class = "project-link" target= "_Blank">
+                                Live Preview <i class = "fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</th:block>
+</html>
